@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using CustomExtensionMethods;
 using EventHandler;
+using EventModel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Abstractions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -54,6 +56,14 @@ namespace SquareService
             {
                 endpoints.MapControllers();
             });
+
+            ConfigureEventBusSubscriptions(app);
+        }
+
+        protected virtual void ConfigureEventBusSubscriptions(IApplicationBuilder app)
+        {
+            var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
+            eventBus.Subscribe<CalculateSquareEvent, CalculateSquareEventHandler>();
         }
     }
 

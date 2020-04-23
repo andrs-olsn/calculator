@@ -54,10 +54,10 @@ namespace FibonacciService
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
-            ConfigureEventBus(app);
+            ConfigureEventBusSubscriptions(app);
         }
 
-        protected virtual void ConfigureEventBus(IApplicationBuilder app)
+        protected virtual void ConfigureEventBusSubscriptions(IApplicationBuilder app)
         {
             var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
             eventBus.Subscribe<CalculateFibonacciEvent, CalculateFibonacciEventHandler>();
