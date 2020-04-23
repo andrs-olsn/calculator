@@ -1,0 +1,503 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\FibonacciService\\FibonacciService.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CalculatorService\\CalculatorService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CalculatorService\\CalculatorService.csproj",
+        "projectName": "CalculatorService",
+        "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CalculatorService\\CalculatorService.csproj",
+        "packagesPath": "C:\\Users\\andreas.olsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CalculatorService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andreas.olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CustomExtensionMethods\\CustomExtensionMethods.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CustomExtensionMethods\\CustomExtensionMethods.csproj"
+              },
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj"
+              },
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj"
+              },
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\EventModel.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\EventModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CustomExtensionMethods\\CustomExtensionMethods.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CustomExtensionMethods\\CustomExtensionMethods.csproj",
+        "projectName": "CustomExtensionMethods",
+        "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CustomExtensionMethods\\CustomExtensionMethods.csproj",
+        "packagesPath": "C:\\Users\\andreas.olsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CustomExtensionMethods\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andreas.olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+        "projectName": "EventBusRabbitMQ",
+        "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
+        "packagesPath": "C:\\Users\\andreas.olsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBusRabbitMQ\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andreas.olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.0.0-rc1, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.6.0-preview1-26829-04, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj",
+        "projectName": "EventBus",
+        "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj",
+        "packagesPath": "C:\\Users\\andreas.olsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andreas.olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventHandler\\EventHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventHandler\\EventHandler.csproj",
+        "projectName": "EventHandler",
+        "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventHandler\\EventHandler.csproj",
+        "packagesPath": "C:\\Users\\andreas.olsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andreas.olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj"
+              },
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\EventModel.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\EventModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\EventModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\EventModel.csproj",
+        "projectName": "EventModel",
+        "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\EventModel.csproj",
+        "packagesPath": "C:\\Users\\andreas.olsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andreas.olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventBus\\EventBus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\FibonacciService\\FibonacciService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\FibonacciService\\FibonacciService.csproj",
+        "projectName": "FibonacciService",
+        "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\FibonacciService\\FibonacciService.csproj",
+        "packagesPath": "C:\\Users\\andreas.olsen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\FibonacciService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\andreas.olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CalculatorService\\CalculatorService.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\CalculatorService\\CalculatorService.csproj"
+              },
+              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventHandler\\EventHandler.csproj": {
+                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventHandler\\EventHandler.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

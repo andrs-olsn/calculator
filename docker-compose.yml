@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+
+  fibonacciservice:
+    image: ${DOCKER_REGISTRY-}fibonacciservice
+    build:
+      context: .
+      dockerfile: FibonacciService/Dockerfile
+    
+
+  squareservice:
+    image: ${DOCKER_REGISTRY-}squareservice
+    build:
+      context: .
+      dockerfile: SquareService/Dockerfile
+
+  calculatorservice:
+    image: ${DOCKER_REGISTRY-}calculatorservice
+    build:
+      context: .
+      dockerfile: CalculatorService/Dockerfile
+    depends_on:
+      - rabbitmq
+

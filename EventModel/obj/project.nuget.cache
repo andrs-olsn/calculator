@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rTpCERxO4z/1APulnhcBrQL2mVrSwRvcKwCHLD4cEu+5wWiCb/2QJghzbj/bzjs7lWoH6jHdnnR/w0O+ACm/TA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\EventModel\\EventModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andreas.olsen\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

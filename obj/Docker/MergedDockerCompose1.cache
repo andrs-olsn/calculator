@@ -1,0 +1,118 @@
+services:
+  calculatorservice:
+    build:
+      context: C:\Users\andreas.olsen\source\Git\calculator
+      dockerfile: CalculatorService/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: CalculatorService
+      target: base
+    container_name: CalculatorService
+    depends_on:
+    - rabbitmq
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+      SubscriptionClientName: calculatorservice
+    image: calculatorservice:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/CalculatorService.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    - target: 443
+    tty: true
+    volumes:
+    - C:\Users\andreas.olsen\source\Git\calculator\CalculatorService:/app:rw
+    - C:\Users\andreas.olsen\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\andreas.olsen\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\andreas.olsen\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\andreas.olsen\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\andreas.olsen\source\Git\calculator:/src:rw
+  fibonacciservice:
+    build:
+      context: C:\Users\andreas.olsen\source\Git\calculator
+      dockerfile: FibonacciService/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: FibonacciService
+      target: base
+    container_name: FibonacciService
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+      SubscriptionClientName: fibonacciservice
+    image: fibonacciservice:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/FibonacciService.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 10003
+      target: 80
+    - target: 443
+    tty: true
+    volumes:
+    - C:\Users\andreas.olsen\source\Git\calculator\FibonacciService:/app:rw
+    - C:\Users\andreas.olsen\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\andreas.olsen\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\andreas.olsen\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\andreas.olsen\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\andreas.olsen\source\Git\calculator:/src:rw
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+  squareservice:
+    build:
+      context: C:\Users\andreas.olsen\source\Git\calculator
+      dockerfile: SquareService/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: SquareService
+      target: base
+    container_name: SquareService
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+      SubscriptionClientName: squareservice
+    image: squareservice:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/SquareService.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 10004
+      target: 80
+    - target: 443
+    tty: true
+    volumes:
+    - C:\Users\andreas.olsen\source\Git\calculator\SquareService:/app:rw
+    - C:\Users\andreas.olsen\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\andreas.olsen\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\andreas.olsen\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\andreas.olsen\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\andreas.olsen\source\Git\calculator:/src:rw
+version: '3.4'
