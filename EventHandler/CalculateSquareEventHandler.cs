@@ -11,7 +11,7 @@ namespace EventHandler
     {
         public Task Handle(CalculateSquareEvent @event)
         {
-            var task = new Task(() => Square(@event.N));
+            var task = new Task<int>(() => Square(@event.N));
             task.Start();
             return task;
         }

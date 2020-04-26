@@ -25,20 +25,16 @@ services:
       ASPNETCORE_URLS: https://+:443;http://+:80
       SubscriptionClientName: fibonacciservice
     image: fibonacciservice
-    ports:
-    - published: 10003
-      target: 80
-    - target: 443
     volumes:
     - C:\Users\andreas.olsen\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\andreas.olsen\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
   rabbitmq:
     image: rabbitmq:3-management
     ports:
-    - published: 5672
-      target: 5672
-    - published: 15672
-      target: 15672
+    - published: 5674
+      target: 5674
+    - published: 15674
+      target: 15674
   squareservice:
     build:
       context: C:\Users\andreas.olsen\source\Git\calculator
@@ -48,10 +44,6 @@ services:
       ASPNETCORE_URLS: https://+:443;http://+:80
       SubscriptionClientName: squareservice
     image: squareservice
-    ports:
-    - published: 10004
-      target: 80
-    - target: 443
     volumes:
     - C:\Users\andreas.olsen\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
     - C:\Users\andreas.olsen\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro

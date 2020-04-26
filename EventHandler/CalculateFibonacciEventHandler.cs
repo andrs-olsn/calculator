@@ -9,6 +9,13 @@ namespace EventHandler
 {
     public class CalculateFibonacciEventHandler : IIntegrationEventHandler<CalculateFibonacciEvent>
     {
+        public IEventBus _eventBus { get; set; }
+
+        public CalculateFibonacciEventHandler(IEventBus eventbus)
+        {
+            _eventBus = eventbus;
+        }
+
         public Task Handle(CalculateFibonacciEvent @event)
         {
             var task = new Task(() => Fib(@event.N));

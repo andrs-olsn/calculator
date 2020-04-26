@@ -60,10 +60,6 @@ services:
         dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
-    ports:
-    - published: 10003
-      target: 80
-    - target: 443
     tty: true
     volumes:
     - C:\Users\andreas.olsen\source\Git\calculator\FibonacciService:/app:rw
@@ -75,10 +71,10 @@ services:
   rabbitmq:
     image: rabbitmq:3-management
     ports:
-    - published: 5672
-      target: 5672
-    - published: 15672
-      target: 15672
+    - published: 5674
+      target: 5674
+    - published: 15674
+      target: 15674
   squareservice:
     build:
       context: C:\Users\andreas.olsen\source\Git\calculator
@@ -103,10 +99,6 @@ services:
         dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
-    ports:
-    - published: 10004
-      target: 80
-    - target: 443
     tty: true
     volumes:
     - C:\Users\andreas.olsen\source\Git\calculator\SquareService:/app:rw
