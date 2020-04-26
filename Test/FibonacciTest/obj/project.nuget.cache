@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "nDbPKmDZ1JlqhuPEYIiIDiTUR49BePdSBaMtb9G/Y1zavX7CMEMr6OoU9+Td5+JmoLwTzOC2wDPSF+iD0BR/yQ==",
-  "success": false,
+  "dgSpecHash": "gykgU1nBkwb04KalnTgisbJupxw/O0HXxPL6Lh2AiAP8HQKXM3VdsGgY/GYN7kWJAKdWfbm3xbTdtJGHqCa2EQ==",
+  "success": true,
   "projectFilePath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\FibonacciTest\\FibonacciTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andreas.olsen\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
@@ -92,33 +92,5 @@
     "C:\\Users\\andreas.olsen\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\andreas.olsen\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

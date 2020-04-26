@@ -13,10 +13,4 @@
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\calculator\EventHandler\EventHandler.csproj" />
-    <ProjectReference Include="..\calculator\EventModel\EventModel.csproj" />
-    <ProjectReference Include="..\calculator\FibonacciService\FibonacciService.csproj" />
-  </ItemGroup>
-
 </Project>

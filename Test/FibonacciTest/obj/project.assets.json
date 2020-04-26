@@ -5656,9 +5656,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj",
-      "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj",
-      "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj",
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
@@ -5690,17 +5687,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj": {
-              "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj"
-            },
-            "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj": {
-              "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj"
-            },
-            "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj": {
-              "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5747,34 +5734,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

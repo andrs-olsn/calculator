@@ -26,17 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj": {
-                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventHandler\\EventHandler.csproj"
-              },
-              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj": {
-                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\EventModel\\EventModel.csproj"
-              },
-              "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj": {
-                "projectPath": "C:\\Users\\andreas.olsen\\source\\Git\\calculator\\Test\\calculator\\FibonacciService\\FibonacciService.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
